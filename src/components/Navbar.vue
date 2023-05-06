@@ -19,7 +19,7 @@
 
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown -4">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Negócios
         </a>
@@ -31,7 +31,7 @@
 
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Financeiro
         </a>
@@ -78,9 +78,20 @@
           <a class="dropdown-item" href="#">E-mail</a>
           <a class="dropdown-item" href="#">Meios de pagamentos</a>
           <a class="dropdown-item" href="#">Configurações nacionais</a>
-
         </div>
       </li>
+      <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="../assets/perfil.png" alt="Foto de perfil" class="rounded-circle" style="width: 25px; height: 25px; margin-right: 5px;">
+        
+    </a>
+    <div class="dropdown-menu dropdown-menu-end dropdown last" aria-labelledby="navbarDropdownMenuLink" >
+        <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Meu perfil</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Alterar senha</a>
+        <a class="dropdown-item" href="#"><i class="fas  fa-arrow-right"></i> Sair</a>
+        
+    </div>
+</li>
     </ul>
   </div>
 </nav>
@@ -90,7 +101,11 @@
 .nav-link{
     color:rgba(255, 255, 255, 0.7);
 }
-
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .dropdown-item{
     color: rgba(255, 255, 255, 0.5);
 }
@@ -99,5 +114,11 @@
 }
 .dropdown-item:hover{
     background-color: #151515;
+}
+.dropdown-toggle::after {
+  color: rgba(214, 34, 35, 1);
+}
+.navbar-nav .dropdown:last-child .dropdown-toggle::after {
+  color:rgba(255, 255, 255, 1);
 }
 </style>
